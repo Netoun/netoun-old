@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="flex flex-col items-center justify-center">
+  <div class="bg-gray-300 rounded-full h-64 w-64 flex mt-20 mb-5">
+    <img class="rounded-full inline ring-4 ring-gray-200" src="/me.jpg" alt="Hello">
+  </div>
+  <div class="flex flex-col text-white items-center justify-center">
+    <div class="text-3xl font-semibold m-1">
+      Nicolas Coulonnier
+    </div>
+    <div class="flex flex-col items-center justify-center m-1">
+      <span class="font-medium"> Full Stack Deleveloper </span>
+      <span class="font-thin"> Rust & Javascript ❤️  </span>
+    </div>
+    <div class="flex space-x-3 text-2xl m-2">
+      <a class="no-underline text-grey-darkest hover:text-gray-400" href="#">
+        <i class="fab fa-github"></i>
+      </a>
+      <a class="no-underline text-grey-darkest hover:text-gray-400" href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="no-underline text-grey-darkest hover:text-gray-400" href="#">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock content %}
