@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
 
 <head>
   <meta charset="utf-8">
@@ -8,22 +8,25 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-800">
-  <nav class="flex flex-row md:w-2/3 mx-auto items-center justify-between p-5 md:px-20 text-white">
-    <h1 class="leading-none text-2xl text-grey-darkest">
+<body class="h-full bg-gray-800 leading-normal">
+  <div class="flex flex-col h-full">
+    <nav class="flex flex-row md:w-2/3 mx-auto items-center justify-between p-5 md:px-20 text-white">
       <a class="no-underline text-grey-darkest hover:text-black" href="#">
         <img class="w-24 inline" src="/hello.svg" alt="Hello">
       </a>
-    </h1>
-    <div class="font-mono">
-      <a> About me </a>
-    </div>
-  </nav>
-  <section class="section">
-    <div class="container mx-auto">
-      {% block content %} {% endblock %}
-    </div>
-  </section>
+      <div class="font-semibold font-sans">
+        <a> About me </a>
+      </div>
+    </nav>
+    <main class="flex-1">
+      <div class="container mx-auto">
+        {% block content %} {% endblock %}
+      </div>
+    </main>
+    <footer class="flex justify-center font-semibold text-white font-sans p-3">
+      © 2021 - Nantes
+    </footer>
+  </div>
 </body>
 
 </html>

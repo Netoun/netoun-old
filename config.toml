@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://netoun.fr"
+base_url = "https://netoun.com"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -12,4 +12,14 @@ highlight_code = true
 build_search_index = false
 
 [extra]
-# Put all your custom variables here
+author = "Nicolas Coulonnier"
+author_image="me.jpg"
+
+job = "Full Stack Developper"
+description = "Rust & Javascript ❤️"
+
+links = [
+    { url = "", icon = "fab fa-github"},
+    { url = "", icon = "fab fa-twitter"},
+    { url = "", icon = "fab fa-linkedin"},
+]
