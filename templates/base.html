@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full">
+<html lang="fr" class="h-full">
 
 <head>
   <meta charset="utf-8">
-  <title>MyBlog</title>
+  <title>Netoun ©️</title>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
 </head>
 
-<body class="h-full bg-gray-800 leading-normal">
+<body class="h-full bg-gray-800">
   <div class="flex flex-col h-full">
-    <nav class="flex flex-row md:w-2/3 mx-auto items-center justify-between p-5 md:px-20 text-white">
-      <a class="no-underline text-grey-darkest hover:text-black" href="#">
-        <img class="w-24 inline" src="/hello.svg" alt="Hello">
+    <nav class="flex flex-row lg:w-2/3 w-full mx-auto items-center justify-between p-5 lg:py-5 md:py-10 md:px-20 text-white text-auto lg:text-base md:text-2xl">
+      <a class="no-underline" href="#">
+        <img class="w-24 lg:w-24 md:w-36 inline" src="/hello.svg">
       </a>
       <div class="font-semibold font-sans">
         <a> About me </a>
@@ -23,7 +23,7 @@
         {% block content %} {% endblock %}
       </div>
     </main>
-    <footer class="flex justify-center font-semibold text-white font-sans p-3">
+    <footer class="flex justify-center font-semibold text-white font-sans p-3 text-auto lg:text-base md:text-2xl">
       © 2021 - Nantes
     </footer>
   </div>
