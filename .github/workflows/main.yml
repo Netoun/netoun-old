@@ -26,8 +26,6 @@ jobs:
       - run: git fetch --prune --unshallow
 
       - uses: 47ng/actions-clever-cloud@v1
-        with:
-          appID: ${{ secrets.CLEVER_APP_ID }}
         env:
           CLEVER_TOKEN: ${{ secrets.CLEVER_TOKEN }}
           CLEVER_SECRET: ${{ secrets.CLEVER_SECRET }}
