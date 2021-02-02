@@ -15,11 +15,11 @@ build_search_index = false
 author = "Nicolas Coulonnier"
 author_image="me.jpg"
 
-job = "Full Stack Developper"
+job = "Full Stack Developer"
 description = "Rust & Javascript ❤️"
 
 links = [
-    { url = "", icon = "fab fa-github"},
-    { url = "", icon = "fab fa-twitter"},
-    { url = "", icon = "fab fa-linkedin"},
+    { url = "https://github.com/Netoun", icon = "fab fa-github"},
+    { url = "https://twitter.com/Netouun", icon = "fab fa-twitter"},
+    { url = "https://www.linkedin.com/in/nicolas-coulonnier-66416813b/", icon = "fab fa-linkedin"},
 ]
