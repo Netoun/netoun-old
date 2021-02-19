@@ -1,8 +1,5 @@
 ## Hi there, I'm [Nicolas Coulonnier][website]
 
-
-### 🔎 Connect with me:
-
 [<img align="left" alt="netoun.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
 [<img align="left" alt="Nicolas COULONNIER | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
 [<img align="left" alt="Nicolas COULONNIER | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
@@ -26,7 +23,6 @@
     <img align="left" alt="ArchLinux logo" title="ArchLinux" width="26px" src="https://raw.githubusercontent.com/github/explore/7b8474be525e3f210d3c8d60a32beca4bfc2895b/topics/archlinux/archlinux.png" />
 </div>
 
-<br />
 <br />
 
 ---
