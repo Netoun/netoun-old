@@ -4,11 +4,15 @@ title = "Professional experience"
 
 ### **Easilys - Full stack developer**: 2019 - ...
 
-In charge to develop new modules for applications
+In charge to develop new modules for applications. Carry out tests and validate its development
+Manage the corrective and evolutionary maintenance of the application
 
-Stack :
+Technical Stack:
+- Database : Postgres
 - Back : Node
 - Front : Vue
+
+&nbsp;
 
 ### **Sogeti - Work-Study Program**: 2018 - 2019
 
@@ -17,6 +21,7 @@ Development of new solutions within the innovation pole :
 - Development of a chatbot using machine learning tools for the
   understanding of emotions
 
-Stack :
+Technical Stack:
+- CI : Drone
 - Back : Python, Rust, DialogFlow, TensorFlow
 - Front : React
