@@ -1,16 +1,21 @@
-html, body, .app {
+html,
+body,
+.app {
   margin: 0;
   height: 100%;
 }
 
 html {
-  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 body {
   color: white;
-  background-color: rgba(35,45,60, 1);
-  font-family: system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';
+  background-color: rgba(35, 45, 60, 1);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 .app {
@@ -28,17 +33,16 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  padding: .5em 2em;
+  padding: 0.5em 2em;
   flex: 0 0 5em;
 
-  font-size: .8em;
+  font-size: 0.8em;
 
   img {
     width: 6rem;
   }
 
   @include sm {
-
     font-size: 2em;
     img {
       width: 10rem;
@@ -75,7 +79,7 @@ body {
 }
 
 .font-thin {
-  font-weight: 100;
+  font-weight: 300;
 }
 
 a {
