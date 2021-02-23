@@ -1,21 +1,21 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="flex flex-col items-center justify-center">
-  <div class="flex mt-20 mb-10">
-    <img class="rounded-full ring-4 ring-gray-200 lg:h-64 lg:w-64 md:h-96 md:w-96" src="/{{ config.extra.author_image }}">
+<div class="homepage">
+  <div class="img_profile_wrapper">
+    <img src="/{{ config.extra.author_image }}">
   </div>
-  <div class="flex flex-col text-white items-center justify-center">
-    <div class="text-3xl lg:text-3xl md:text-5xl font-semibold m-1">
+  <div class="content">
+    <div class="content_title">
       {{ config.extra.author }}
     </div>
-    <div class="flex flex-col items-center justify-center m-1 lg:m-2 md:m-5 text-md lg:text-base md:text-3xl ">
+    <div class="content_subtitle">
       <span class="font-medium"> {{ config.extra.job }} </span>
       <span class="font-thin"> {{ config.extra.description }} </span>
     </div>
-    <div class="flex space-x-3 m-2">
+    <div class="content_icons">
       {% for link in config.extra.links %}
-        <a class="no-underline text-grey-darkest hover:text-gray-400 text-2xl lg:text-2xl md:text-4xl" href="{{ link.url }}">
+        <a class="icon_wrapper" href="{{ link.url }}">
           <i class="{{ link.icon }}"></i>
         </a>
       {% endfor %}

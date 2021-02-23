@@ -1,0 +1,79 @@
+.homepage {
+  margin: 5rem;
+
+  text-align: center;
+  .img_profile_wrapper {
+    margin: 1em;
+    img {
+      border-radius: 50%;
+      border: solid .2rem white;
+      width: 250px;
+    }
+
+    @include sm {
+      padding: .5em 2em;
+      font-size: 2em;
+      img {
+        border: solid .4rem white;
+        width: 15em;
+      }
+    }
+
+    @include lg {
+      padding: .5em 2em;
+      font-size: 2em;
+      img {
+        border: solid .2rem white;
+        width: 250px;
+      }
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    line-height: 1.5em;
+
+    margin-top: 2em;
+
+    & > * {
+      flex-basis: 1.5em;
+    }
+
+    .content_title {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.8em;
+      font-weight: 600;
+    }
+
+    .content_subtitle {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content_icons {
+      margin: 1em;
+      font-size: 1.5em;
+      .icon_wrapper{
+        margin: 0 .2em;
+        color: white;
+        text-decoration: none;
+
+        &:visited {
+          color: white;
+        }
+      }
+    }
+
+    @include sm {
+      padding: .5em 2em;
+      font-size: 2em;
+    }
+
+    @include lg {
+      font-size: 1em;
+    }
+  }
+}

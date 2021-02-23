@@ -1,9 +1,7 @@
-ol,
-ul {
-  list-style: disc !important;
-  margin: inherit;
-}
+@import './_mixins.scss';
+@import './_variables.scss';
 
-h3 {
-  margin-bottom: 0.5rem;
-}
+@import './base.scss';
+@import './homepage.scss';
+@import './about.scss';
+

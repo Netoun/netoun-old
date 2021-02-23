@@ -1,31 +1,28 @@
 <!DOCTYPE html>
-<html lang="fr" class="h-full">
+<html>
 
 <head>
   <meta charset="utf-8">
   <title>Netoun ©️</title>
   <script async defer data-domain="netoun.com" src="https://plausible.io/js/plausible.js"></script>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="{{ get_url(path="style.css") }}">
 </head>
 
-<body class="h-full bg-gray-800">
-  <div class="flex flex-col h-full">
-    <nav class="flex flex-row lg:w-2/3 w-full mx-auto items-center justify-between p-5 lg:py-5 md:py-10 md:px-20 text-white text-auto lg:text-base md:text-2xl">
-      <a class="no-underline" href="/">
-        <img class="w-24 lg:w-24 md:w-36 inline" src="/hello.png">
+<body>
+  <div class="app">
+    <nav class="nav">
+      <a href="/">
+        <img  src="/hello.png">
       </a>
-      <div class="font-semibold font-sans">
+      <div>
         <a href="/about"> About me </a>
       </div>
     </nav>
-    <main class="flex-1">
-      <div class="container mx-auto">
-        {% block content %} {% endblock %}
-      </div>
+    <main class="container">
+      {% block content %} {% endblock %}
     </main>
-    <footer class="flex justify-center font-semibold text-white font-sans p-3 text-auto lg:text-base md:text-2xl">
+    <footer class="footer">
       © 2021 - Nantes
     </footer>
   </div>
