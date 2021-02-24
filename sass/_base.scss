@@ -60,7 +60,7 @@ body {
   .nav_item {
     &.active {
       img {
-        filter: drop-shadow(0 0 6px rgba(202,228,225,0.5));
+        filter: drop-shadow(0 0 6px rgba(202,228,225,0.5)) drop-shadow(-.2rem 0 6px rgba(255, 8, 8, 0.5)) drop-shadow(.2rem 0 6px rgba(0, 217, 255, 0.5));
       }
       span {
         text-shadow: 0 0 6px rgba(202,228,225,0.5);
