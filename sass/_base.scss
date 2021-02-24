@@ -99,6 +99,10 @@ body {
   justify-content: center;
   font-weight: 600;
 
+  .copyright {
+    color: $darkScnd;
+  }
+
   @include sm {
     font-size: 2em;
   }

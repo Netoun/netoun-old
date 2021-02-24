@@ -1,31 +1,70 @@
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes fluid-border {
+  0% {
+    border-radius: 150px 200px 180px 160px;
+  }
+  25% {
+    border-radius: 200px 150px 50px 200px;
+  }
+  50% {
+    border-radius: 190 200px 100px 150px;
+  }
+  75% {
+    border-radius: 200px 130px 151px 180px;
+  }
+  100% {
+    border-radius: 150px 200px 180px 160px;
+  }
+}
+
+
 .homepage {
   margin: 5rem;
 
   text-align: center;
   .img_profile_wrapper {
     margin: 1em;
+    border-radius: 50%;
+    position: relative;
+    --width: 15rem;
+    width: 15rem;
+    height: 15rem;
+
+    .circle {
+      z-index: -1;
+      position: block;
+      border-radius: inherit;
+      background: white;
+      width: calc(var(--width));
+      height: calc(var(--width));
+      animation: spin 10s linear infinite, fluid-border 8s ease-in-out infinite;
+    }
+
     img {
-      border-radius: 50%;
-      border: solid .2rem;
-      width: 250px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: inherit;
+      width: calc(var(--width) - .75rem);
+      height: calc(var(--width) - .75rem);
     }
 
     @include sm {
       padding: .5em 2em;
       font-size: 2em;
-      img {
-        border: solid .4rem;
-        width: 15em;
-      }
+      width: 20rem;
     }
 
     @include lg {
       padding: .5em 2em;
       font-size: 2em;
-      img {
-        border: solid .2rem;
-        width: 250px;
-      }
+      width: 15rem;
     }
   }
   .content {
