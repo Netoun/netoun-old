@@ -12,11 +12,11 @@
 <body>
   <div class="app">
     <nav class="nav">
-      <a href="/">
-        <img  src="/hello.png">
+      <a {% if current_path == "/" %}class="nav_item active"{% else %}class="nav_item"{% endif %} href="/">
+        <img src="/hello.png">
       </a>
       <div>
-        <a href="/about"> About me </a>
+        <a {% if current_path is starting_with("/about") %}class="nav_item active"{% else %}class="nav_item"{% endif %} href="/about"> <span> About me </span> </a>
       </div>
     </nav>
     <main class="container">

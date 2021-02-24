@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  color: white;
-  background-color: rgba(35, 45, 60, 1);
+  color: $darkPrim;
+  background-color: $darkBgrd;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
@@ -37,7 +37,6 @@ body {
   flex: 0 0 5em;
 
   font-size: 0.8em;
-
   img {
     width: 6rem;
   }
@@ -55,6 +54,32 @@ body {
     font-size: 1em;
     img {
       width: 8rem;
+    }
+  }
+
+  .nav_item {
+    &.active {
+      img {
+        filter: drop-shadow(0 0 6px rgba(202,228,225,0.5));
+      }
+      span {
+        text-shadow: 0 0 6px rgba(202,228,225,0.5);
+        position: relative;
+        display: inline-block;
+        &:before{
+          box-shadow: 0 0 6px rgba(202,228,225, 1);
+          position: absolute;
+          height: 2px;
+          width: 50%;
+          left: 25%;
+          transform: translate(0, -50%);
+          bottom: -5px;
+          background: white;
+          display: block;
+          content: "";
+          border-radius: 2px;
+        }
+      }
     }
   }
 }
@@ -93,7 +118,7 @@ body {
 }
 
 a {
-  color: white;
+  color: $darkPrim;
   text-decoration: none;
   font-weight: 600;
 }

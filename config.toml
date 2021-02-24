@@ -22,4 +22,6 @@ links = [
     { url = "https://github.com/Netoun", icon = "fab fa-github"},
     { url = "https://twitter.com/Netouun", icon = "fab fa-twitter"},
     { url = "https://www.linkedin.com/in/nicolas-coulonnier-66416813b/", icon = "fab fa-linkedin"},
+    { url = "mailto:coulonnier.nicolas.44@gmail.com", icon = "fas fa-envelope"}
 ]
+

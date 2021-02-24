@@ -19,15 +19,19 @@
     }
   }
   .content-block {
-    background-color: rgba(28, 38, 50, 1);
+    background-color: $darkCard;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     margin: 3rem 0;
-    color: rgba(255, 255, 255, 0.9);
     border-radius: 0.5rem;
     padding: 0.25rem 1rem 0.5rem;
 
     h3 {
       font-weight: 500;
+      color: $darkScnd;
+
+      a {
+        color: inherit;
+      }
     }
 
     p {
@@ -46,5 +50,14 @@
   @include lg {
     padding: 2em;
     font-size: 1em;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li::before {
+    content: "• ";
+    color: $darkScnd;
   }
 }

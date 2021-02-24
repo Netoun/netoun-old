@@ -6,7 +6,7 @@
     margin: 1em;
     img {
       border-radius: 50%;
-      border: solid .2rem white;
+      border: solid .2rem;
       width: 250px;
     }
 
@@ -14,7 +14,7 @@
       padding: .5em 2em;
       font-size: 2em;
       img {
-        border: solid .4rem white;
+        border: solid .4rem;
         width: 15em;
       }
     }
@@ -23,7 +23,7 @@
       padding: .5em 2em;
       font-size: 2em;
       img {
-        border: solid .2rem white;
+        border: solid .2rem;
         width: 250px;
       }
     }
@@ -58,12 +58,8 @@
       font-size: 1.5em;
       .icon_wrapper{
         margin: 0 .2em;
-        color: white;
         text-decoration: none;
-
-        &:visited {
-          color: white;
-        }
+        text-shadow: 0 0 6px rgba(202,228,225,0.5);
       }
     }
 
