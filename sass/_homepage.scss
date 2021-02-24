@@ -28,10 +28,9 @@
 
   text-align: center;
   .img_profile_wrapper {
-    margin: 1em;
+    margin: auto;
     border-radius: 50%;
     position: relative;
-    --width: 15rem;
     width: 15rem;
     height: 15rem;
 
@@ -40,8 +39,8 @@
       position: block;
       border-radius: inherit;
       background: white;
-      width: calc(var(--width));
-      height: calc(var(--width));
+      width: inherit;
+      height: inherit;
       animation: spin 10s linear infinite, fluid-border 8s ease-in-out infinite;
     }
 
@@ -51,20 +50,40 @@
       left: 50%;
       transform: translate(-50%, -50%);
       border-radius: inherit;
-      width: calc(var(--width) - .75rem);
-      height: calc(var(--width) - .75rem);
+      width: 14rem;
+      height: 14rem;
     }
 
     @include sm {
       padding: .5em 2em;
       font-size: 2em;
       width: 20rem;
+      height: 20rem;
+
+      .circle {
+        width: inherit;
+        height: inherit;
+      }
+      img {
+        width: 19rem;
+        height: 19rem;
+      }
     }
 
     @include lg {
       padding: .5em 2em;
       font-size: 2em;
       width: 15rem;
+      height: 15rem;
+
+      .circle {
+        width: inherit;
+        height: inherit;
+      }
+      img {
+        width: 14rem;
+        height: 14rem;
+      }
     }
   }
   .content {
