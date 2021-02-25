@@ -10,44 +10,46 @@
 </head>
 
 <body>
-  <div class="app">
-    <nav class="nav">
-      <a {% if current_path =="/" ~ lang %}class="nav_item active"{% else %}class="nav_item"{% endif %}
-         {% if lang == "en" %} href="/" {% else %} href="{{"/" ~ lang}}" {% endif %}
-      >
-        <img src="/hello.png">
-      </a>
-      <div class="nav-right">
-        <small class="languages">
-          {% set deflang = true %}
-          {% for lang in config.languages %}
-            {% if current_url is not containing(lang.code) %}
-              <a href="{{ current_url | replace(from=config.base_url, to=config.base_url ~ "/" ~ lang.code) }}">{{ config.extra.languages_flags[loop.index] }}</a>
-            {% else %}
-              <div class="active">{{ config.extra.languages_flags[loop.index] }} </div>
-              {% set_global deflang = false %}
-            {% endif %}
-          {% endfor %}
-
-          {% if deflang %}
-            <div class="active">{{ config.extra.languages_flags[0] }}</div>
-          {% else %}
-            <a href="{{ current_url | replace(from=lang ~ "/", to="") }}">{{ config.extra.languages_flags[0] }}</a>
-          {% endif %}
-        </small>
-        <a {% if current_path is containing("/about") %}class="nav_item active"{% else %}class="nav_item"{% endif %}
-           {% if lang == "en" %} href="/about" {% else %} href="{{"/" ~ lang ~ "/about"}}" {% endif %}
+  <div class="wrapper">
+    <div class="app">
+      <nav class="nav">
+        <a {% if current_path == "/" or current_path == "/fr" %} class="nav_item active" {% else %} class="nav_item" {% endif %}
+           {% if lang == "en" %} href="/" {% else %} href="{{"/" ~ lang}}" {% endif %}
         >
-           <span> About me </span>
+          <img src="/hello.png">
         </a>
-      </div>
-    </nav>
-    <main class="container">
-      {% block content %} {% endblock %}
-    </main>
-    <footer class="footer">
-      <span class="copyright">©</span>&nbsp;2021 - Nantes
-    </footer>
+        <div class="nav-right">
+          <small class="languages">
+            {% set deflang = true %}
+            {% for lang in config.languages %}
+              {% if current_url is not containing(lang.code) %}
+                <a href="{{ current_url | replace(from=config.base_url, to=config.base_url ~ "/" ~ lang.code) }}">{{ config.extra.languages_flags[loop.index] }}</a>
+              {% else %}
+                <div class="active">{{ config.extra.languages_flags[loop.index] }} </div>
+                {% set_global deflang = false %}
+              {% endif %}
+            {% endfor %}
+
+            {% if deflang %}
+              <div class="active">{{ config.extra.languages_flags[0] }}</div>
+            {% else %}
+              <a href="{{ current_url | replace(from=lang ~ "/", to="") }}">{{ config.extra.languages_flags[0] }}</a>
+            {% endif %}
+          </small>
+          <a {% if current_path is containing("/about") %}class="nav_item active"{% else %}class="nav_item"{% endif %}
+             {% if lang == "en" %} href="/about" {% else %} href="{{"/" ~ lang ~ "/about"}}" {% endif %}
+          >
+             <span> About me </span>
+          </a>
+        </div>
+      </nav>
+      <main class="container">
+        {% block content %} {% endblock %}
+      </main>
+      <footer class="footer">
+        <span class="copyright">©</span>&nbsp;2021 - Nantes
+      </footer>
+    </div>
   </div>
 </body>
 
