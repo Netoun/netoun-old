@@ -4,6 +4,24 @@
   }
 }
 
+@keyframes skew {
+  0% {
+    transform: skew(0deg);
+  }
+  25% {
+    transform: skew(3deg);
+  }
+  50% {
+    transform: skew(2deg);
+  }
+  75% {
+    transform: skew(5deg);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+
 @keyframes fluid-border {
   0% {
     border-radius: 165px 200px 180px 160px;
@@ -24,8 +42,6 @@
 
 
 .homepage {
-  margin: 5rem;
-
   text-align: center;
   .img_profile_wrapper {
     margin: auto;
@@ -41,7 +57,7 @@
       background: white;
       width: inherit;
       height: inherit;
-      animation: spin 10s linear infinite, fluid-border 8s ease-in-out infinite;
+      animation: spin 10s linear infinite, fluid-border 8s ease-in-out infinite, skew 15s linear infinite;
     }
 
     img {
@@ -57,7 +73,7 @@
     @include sm {
       padding: .5em 2em;
       font-size: 2em;
-      width: 20rem;
+      width: 26rem;
       height: 20rem;
 
       .circle {

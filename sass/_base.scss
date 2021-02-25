@@ -57,6 +57,46 @@ body {
     }
   }
 
+  .nav-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    .languages {
+      margin-right: 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      @include sm {
+        margin-right: 3rem;
+      }
+
+      @include lg {
+        margin-left: 2rem;
+      }
+
+      & > * {
+        margin-left: .5rem;
+
+        @include sm {
+          margin-left: 1rem;
+        }
+
+        @include lg {
+          margin-left: .5rem;
+        }
+
+        &.active {
+          text-shadow: 2px 2px 1px $darkCard, -2px -2px 1px $darkCard;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
   .nav_item {
     &.active {
       img {
@@ -90,6 +130,7 @@ body {
   flex: 1 1 auto;
   flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
 }
 
 .footer {

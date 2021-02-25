@@ -10,6 +10,11 @@ highlight_code = true
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
+default_language = "en"
+languages = [
+    {code = "fr", flag="ee"}, # there will be a feed for French content
+]
+
 
 [extra]
 author = "Nicolas Coulonnier"
@@ -25,3 +30,7 @@ links = [
     { url = "mailto:coulonnier.nicolas.44@gmail.com", icon = "fas fa-envelope"}
 ]
 
+languages_flags = [
+    "🇬🇧",
+    "🇫🇷"
+]
