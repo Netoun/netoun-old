@@ -1,6 +1,7 @@
 +++
 title = "Description"
 template = "about.html"
+sort_by = "date"
 +++
 
 J'ai 25 ans et j'habite à Nantes. Je suis passionné par l'informatique au sens large : dev, web technos, hardware, Linux, IoT, ... <br />
