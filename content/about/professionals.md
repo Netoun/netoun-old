@@ -5,7 +5,7 @@ date = 2021-02-19
 
 ### **[Easilys](https://www.easilys.com/) - Full stack developer**: 2019 - ...
 
-In charge to develop new modules for applications. Carry out tests and validate its development
+In charge to develop new modules for applications. Carry out tests and validate its development.
 Manage the corrective and evolutionary maintenance of the application
 
 Technical Stack:
