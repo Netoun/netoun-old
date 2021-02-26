@@ -1,9 +1,10 @@
 +++
 title = "Formations"
+date = 2021-02-18
 +++
 
 ### **[EPSI](http://www.epsi.fr/) - Master en ingénierie informatique**: 2016 - 2019
-Formation conduisant à une qualification RNCP de niveau I (Bac+5) "Expert en informatique et systèmes d'information", et réalisée en apprentissage dans l'entreprise [Atos](https://www.atos.net/) and [Sogeti](https://www.fr.sogeti.com/).
+Formation conduisant à une qualification RNCP de niveau I (Bac+5) "Expert en informatique et systèmes d'information", et réalisée en alternance dans l'entreprise [Atos](https://www.atos.net/) and [Sogeti](https://www.fr.sogeti.com/).
 
 &nbsp;
 

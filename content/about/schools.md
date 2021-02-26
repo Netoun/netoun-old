@@ -1,5 +1,6 @@
 +++
 title = "Schools course"
+date = 2021-02-18
 +++
 
 ### **[EPSI](http://www.epsi.fr/) - Master of Science in Computer Engineering**: 2016 - 2019

@@ -1,5 +1,6 @@
 +++
 title = "Professional experience"
+date = 2021-02-19
 +++
 
 ### **Easilys - Full stack developer**: 2019 - ...
