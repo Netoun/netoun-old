@@ -9,6 +9,6 @@ Training leading to a level I RNCP qualification (Bac+5) "Expert in Computer Sci
 &nbsp;
 
 ### **[Saint Félix la salle](https://stfelixlasalle.fr/formation/bts-systemes-numeriques) - Computer Science Associate’s Degree (SNIR)**: 2014 - 2016
-Journey through computer science basics and networks systems with internship and project
+Training in the basics of computing, networks and their security, embedded systems, cloud computing and systems programming.
 - Design, project management, web, c++
 - Database, network, systeme

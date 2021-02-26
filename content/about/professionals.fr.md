@@ -11,7 +11,7 @@ Gérer la maintenance corrective et évolutive de l'application
 Stack technique :
 - Base de données : Postgres
 - Back : Node
-- Avant : Vue
+- Front : Vue
 
 &nbsp;
 
@@ -25,4 +25,4 @@ Développement de nouvelles solutions au sein du pôle d'innovation :
 Stack technique :
 - CI : Drone
 - Back : Python, Rust, DialogFlow, TensorFlow
-- Avant : React
+- Front : React
