@@ -107,7 +107,9 @@ body {
         text-shadow: 0 0 6px rgba(202,228,225,0.5);
         position: relative;
         display: inline-block;
+
         &:before{
+          transition: .2s;
           box-shadow: 0 0 6px rgba(202,228,225, 1);
           position: absolute;
           height: 2px;
@@ -119,6 +121,9 @@ body {
           display: block;
           content: "";
           border-radius: 2px;
+        }
+        &:hover:before {
+          background: $darkThrd;
         }
       }
     }
@@ -167,4 +172,8 @@ a {
   color: $darkPrim;
   text-decoration: none;
   font-weight: 600;
+  transition: .2s;
+  &:hover {
+    color: $darkThrd;
+  }
 }
