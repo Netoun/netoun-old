@@ -39,6 +39,9 @@ body {
 
   font-size: 0.8em;
   img {
+    &:hover {
+      filter: drop-shadow(0 0 5px rgba(202,228,225,0.5)) drop-shadow(-5px 0 5px rgba($darkScnd, 0.5)) drop-shadow(5px 0 5px rgba($darkThrd, 0.5));
+    }
     width: 6rem;
   }
 
@@ -54,6 +57,10 @@ body {
     margin: auto;
     font-size: 1em;
     img {
+      &:hover {
+        filter: drop-shadow(0 0 4px rgba(202,228,225,0.5)) drop-shadow(-4px 0 3px rgba($darkScnd, 0.5)) drop-shadow(4px 0 3px rgba($darkThrd, 0.5));
+      }
+      transition: .2s;
       width: 8rem;
     }
   }
@@ -107,7 +114,7 @@ body {
       span {
         position: relative;
         display: inline-block;
-        
+
         &:before{
           transition: .2s;
           box-shadow: 0 0 6px rgba(202,228,225, 1);
