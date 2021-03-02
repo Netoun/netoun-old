@@ -39,7 +39,11 @@
       color: $darkScnd;
 
       a {
-        color: inherit;
+        color: $darkScnd;
+
+        &:hover {
+          color: $darkThrd;
+        }
       }
     }
 

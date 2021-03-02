@@ -100,14 +100,14 @@ body {
 
   .nav_item {
     &.active {
+      text-shadow: 0 0 6px rgba(202,228,225,0.5);
       img {
         filter: drop-shadow(0 0 6px rgba(202,228,225,0.5)) drop-shadow(-.2rem 0 6px rgba(255, 8, 8, 0.5)) drop-shadow(.2rem 0 6px rgba(0, 217, 255, 0.5));
       }
       span {
-        text-shadow: 0 0 6px rgba(202,228,225,0.5);
         position: relative;
         display: inline-block;
-
+        
         &:before{
           transition: .2s;
           box-shadow: 0 0 6px rgba(202,228,225, 1);
@@ -123,9 +123,12 @@ body {
           border-radius: 2px;
         }
         &:hover:before {
-          background: $darkThrd;
+          box-shadow: 3px 0 2px rgba($darkThrd, 0.75), -3px 0 2px rgba($darkScnd, 0.75);
         }
       }
+    }
+    &:hover {
+      text-shadow: 2px 0 2px rgba($darkThrd, 0.75), -2px 0 2px rgba($darkScnd, 0.75);
     }
   }
 }
@@ -173,7 +176,4 @@ a {
   text-decoration: none;
   font-weight: 600;
   transition: .2s;
-  &:hover {
-    color: $darkThrd;
-  }
 }

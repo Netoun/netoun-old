@@ -134,6 +134,10 @@
         margin: 0 .2em;
         text-decoration: none;
         text-shadow: 0 0 6px rgba(202,228,225,0.25);
+        &:hover {
+          text-shadow: 2px 0 2px rgba($darkThrd, 0.75), -2px 0 2px rgba($darkScnd, 0.75);
+        }
+
       }
     }
 
