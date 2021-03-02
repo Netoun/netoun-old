@@ -14,7 +14,7 @@
   padding: 1em;
 
   @include lg {
-    width: min(90ch, calc(100% - 64px));
+    width: calc(min(90ch, calc(100%) - 64px));
   }
 
   .resume-header {
