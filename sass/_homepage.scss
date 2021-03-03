@@ -41,8 +41,8 @@
     margin: auto;
     border-radius: 50%;
     position: relative;
-    width: 15rem;
-    height: 15rem;
+    width: 270px;
+    height: 270px;
 
     .circle {
       z-index: -1;
@@ -60,15 +60,12 @@
       left: 50%;
       transform: translate(-50%, -50%);
       border-radius: inherit;
-      width: 14rem;
-      height: 14rem;
     }
 
     @include lg {
       padding: .5em 2em;
       font-size: 2em;
-      width: 265px;
-      height: 265px;
+
 
       .circle {
         width: inherit;
@@ -107,7 +104,7 @@
 
     .content_icons {
       margin: 1em;
-      font-size: 1.5em;
+      font-size: 1.75em;
       .icon_wrapper{
         margin: 0 .2em;
         text-decoration: none;

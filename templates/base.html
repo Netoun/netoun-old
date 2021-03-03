@@ -5,12 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> {{config.extra.author }} </title>
-  <meta property="og:description" content="Personal website of a web developer.">
+  <meta name="author" content="{{ config.extra.author }}">
+  <meta property="og:title" content="{{ config.extra.author }}">
+  <meta property="og:image" content="{{config.base_url ~ 'hello.png' }}">
+  <meta property="og:description" content="Personal website of a web developer using zola static generator website.">
   <script async defer data-domain="netoun.com" src="https://plausible.io/js/plausible.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+  <link rel="preload"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="icon" type="image/png" href="/favicon.png" />
-  <link rel="preload"href="{{ get_url(path="style.css") }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="{{ get_url(path="style.css") }}"></noscript>
+  <link rel="preload" href="{{ get_url(path="style.css") }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="{{ get_url(path="style.css") }}">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  </noscript>
 </head>
 
 <body>
@@ -20,7 +26,7 @@
         <a {% if current_path == "/" or current_path == "fr/" %} class="nav_item active" {% else %} class="nav_item" {% endif %}
            {% if lang == "en" %} href="/" {% else %} href="{{"/" ~ lang}}" {% endif %}
         >
-          <img src="/hello.png" alt="hello" width="125" height="75">
+          <img src="{{ config.base_url ~ 'hello.png' }}" alt="hello" width="125" height="67">
         </a>
         <div class="nav-right">
           <small class="languages">
