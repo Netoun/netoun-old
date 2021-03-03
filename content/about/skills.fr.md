@@ -8,7 +8,7 @@ date = 2021-02-17
 - **Système** : NGINX, Docker, Linux, ...
 - **Méthodologie** : SCRUM
 
-### Autres :
+## Autres :
 
 - Musique 🎵 (Guitare, batterie et MAO)
 - Jeux-vidéos 🎮
