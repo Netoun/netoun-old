@@ -37,7 +37,6 @@ body {
   padding: 0.5em 2em;
   flex: 0 0 5em;
 
-  font-size: 0.8em;
   img {
     &:hover {
       filter: drop-shadow(0 0 5px rgba(202,228,225,0.5)) drop-shadow(-5px 0 5px rgba($darkScnd, 0.5)) drop-shadow(5px 0 5px rgba($darkThrd, 0.5));
@@ -55,7 +54,7 @@ body {
   @include lg {
     width: 75%;
     margin: auto;
-    font-size: 1em;
+    font-size: 1.2em;
     img {
       &:hover {
         filter: drop-shadow(0 0 4px rgba(202,228,225,0.5)) drop-shadow(-4px 0 3px rgba($darkScnd, 0.5)) drop-shadow(4px 0 3px rgba($darkThrd, 0.5));
@@ -99,7 +98,7 @@ body {
 
         &.active {
           text-shadow: 2px 2px 1px $darkCard, -2px -2px 1px $darkCard;
-          font-size: 1.2rem;
+          font-size: 1.5rem;
         }
       }
     }
@@ -166,7 +165,7 @@ body {
 
   @include lg {
     margin: auto;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }
 
