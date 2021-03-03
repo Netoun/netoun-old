@@ -56,10 +56,6 @@
     }
   }
 
-  @include sm {
-    font-size: 2em;
-  }
-
   @include lg {
     padding: 2em;
     font-size: 1.2em;

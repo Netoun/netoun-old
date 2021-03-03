@@ -1,24 +1,18 @@
-@keyframes spin {
-  100% {
-    transform: rotateZ(360deg);
-  }
-}
-
 @keyframes skew {
   0% {
-    transform: skew(0deg);
+    transform: skew(0deg) rotateZ(0deg);
   }
   25% {
-    transform: skew(3deg);
+    transform: skew(6deg) rotateZ(90deg);
   }
   50% {
-    transform: skew(2deg);
+    transform: skew(3deg) rotateZ(190deg);
   }
   75% {
-    transform: skew(5deg);
+    transform: skew(5deg) rotateZ(270deg);
   }
   100% {
-    transform: skew(0deg);
+    transform: skew(1deg) rotateZ(360deg);
   }
 }
 
@@ -57,7 +51,7 @@
       background: white;
       width: inherit;
       height: inherit;
-      animation: spin 5s linear infinite, fluid-border 4s ease-in-out infinite, skew 6s linear infinite;
+      animation: fluid-border 4s ease-in-out infinite, skew 6s linear infinite;
     }
 
     img {
@@ -70,35 +64,19 @@
       height: 14rem;
     }
 
-    @include sm {
-      padding: .5em 2em;
-      font-size: 2em;
-      width: 26rem;
-      height: 26rem;
-
-      .circle {
-        width: inherit;
-        height: inherit;
-      }
-      img {
-        width: 25rem;
-        height: 25rem;
-      }
-    }
-
     @include lg {
       padding: .5em 2em;
       font-size: 2em;
-      width: 15rem;
-      height: 15rem;
+      width: 265px;
+      height: 265px;
 
       .circle {
         width: inherit;
         height: inherit;
       }
       img {
-        width: 14rem;
-        height: 14rem;
+        width: 250px;
+        height: 250px;
       }
     }
   }
@@ -138,11 +116,6 @@
           text-shadow: 2px 0 2px rgba($darkThrd, 0.75), -2px 0 2px rgba($darkScnd, 0.75);
         }
       }
-    }
-
-    @include sm {
-      padding: .5em 2em;
-      font-size: 2em;
     }
 
     @include lg {

@@ -44,12 +44,6 @@ body {
     width: 6rem;
   }
 
-  @include sm {
-    font-size: 2em;
-    img {
-      width: 10rem;
-    }
-  }
 
   @include lg {
     width: 75%;
@@ -77,20 +71,12 @@ body {
       justify-content: space-between;
       align-items: center;
 
-      @include sm {
-        margin-right: 3rem;
-      }
-
       @include lg {
         margin-left: 2rem;
       }
 
       & > * {
         margin-left: .5rem;
-
-        @include sm {
-          margin-left: 1rem;
-        }
 
         @include lg {
           margin-left: .5rem;
@@ -159,9 +145,6 @@ body {
     color: $darkScnd;
   }
 
-  @include sm {
-    font-size: 2em;
-  }
 
   @include lg {
     margin: auto;
