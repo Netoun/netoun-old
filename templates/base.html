@@ -7,7 +7,7 @@
   <title> {{config.extra.author }} </title>
   <meta name="author" content="{{ config.extra.author }}">
   <meta property="og:title" content="{{ config.extra.author }}">
-  <meta property="og:image" content="{{config.base_url ~ 'hello.png' }}">
+  <meta property="og:image" content="{{config.base_url ~ '/hello.png' }}">
   <meta property="og:description" content="Personal website of a web developer using zola static generator website.">
   <script async defer data-domain="netoun.com" src="https://plausible.io/js/plausible.js"></script>
   <link rel="preload"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -24,9 +24,9 @@
     <div class="app">
       <nav class="nav">
         <a {% if current_path == "/" or current_path == "fr/" %} class="nav_item active" {% else %} class="nav_item" {% endif %}
-           {% if lang == "en" %} href="/" {% else %} href="{{"/" ~ lang}}" {% endif %}
+           {% if lang == "en" %} href="{{ config.base_url ~ '/' }}" {% else %} href="{{ config.base_url ~ '/' ~ lang}}" {% endif %}
         >
-          <img src="{{ config.base_url ~ 'hello.png' }}" alt="hello" width="125" height="67">
+          <img src="{{ config.base_url ~ '/hello.png' }}" alt="hello" width="125" height="67">
         </a>
         <div class="nav-right">
           <small class="languages">
@@ -47,7 +47,7 @@
             {% endif %}
           </small>
           <a {% if current_path is containing("/about") %}class="nav_item active"{% else %}class="nav_item"{% endif %}
-             {% if lang == "en" %} href="/about" {% else %} href="{{"/" ~ lang ~ "/about"}}" {% endif %}
+             {% if lang == "en" %} href="{{ config.base_url ~ '/about' }}" {% else %} href="{{ config.base_url ~ '/' ~ lang ~ '/about'}}" {% endif %}
           >
              <span> About me </span>
           </a>
