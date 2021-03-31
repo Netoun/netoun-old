@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html,
 body,
 .app {
@@ -39,7 +45,7 @@ body {
 
   img {
     &:hover {
-      filter: drop-shadow(0 0 5px rgba(202,228,225,0.4)) drop-shadow(-4px 0 5px rgba($darkScnd, 0.4)) drop-shadow(4px 0 5px rgba($darkThrd, 0.4));
+      filter: drop-shadow(0 0 5px rgba(202,228,225,0.2)) drop-shadow(-2px 0 5px rgba($darkScnd, 0.25)) drop-shadow(2px 0 5px rgba($darkThrd, 0.25));
     }
   }
 
@@ -86,7 +92,7 @@ body {
     }
   }
 
-  .nav_item {
+  .nav-item {
     &:hover {
       transform: translateY(-2px);
     }
@@ -96,7 +102,7 @@ body {
     &.active {
       text-shadow: 0 0 6px rgba(202,228,225,0.5);
       img {
-        filter: drop-shadow(0 0 5px rgba(202,228,225,0.4)) drop-shadow(-4px 0 5px rgba($darkScnd, 0.4)) drop-shadow(4px 0 5px rgba($darkThrd, 0.4));
+        filter: drop-shadow(0 0 5px rgba(202,228,225,0.2)) drop-shadow(-2px 0 5px rgba($darkScnd, 0.4)) drop-shadow(2px 0 5px rgba($darkThrd, 0.4));
       }
       span {
         position: relative;

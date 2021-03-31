@@ -1,18 +1,18 @@
 @keyframes skew {
   0% {
-    transform: skew(0deg) rotateZ(0deg);
+    transform: skew(0deg) rotate3D(0, 0, 0deg);
   }
   25% {
-    transform: skew(6deg) rotateZ(90deg);
+    transform: skew(6deg) rotate3D(0, 0, 90deg);
   }
   50% {
-    transform: skew(3deg) rotateZ(190deg);
+    transform: skew(3deg) rotate3D(0, 0, 190deg);
   }
   75% {
-    transform: skew(5deg) rotateZ(270deg);
+    transform: skew(5deg) rotate3D(0, 0, 270deg);
   }
   100% {
-    transform: skew(1deg) rotateZ(360deg);
+    transform: skew(1deg) rotate3D(0, 0, 360deg);
   }
 }
 
@@ -37,7 +37,7 @@
 
 .homepage {
   text-align: center;
-  .img_profile_wrapper {
+  .img-profile-wrapper {
     margin: auto;
     border-radius: 50%;
     position: relative;
@@ -45,8 +45,10 @@
     height: 270px;
 
     .circle {
-      z-index: -1;
-      position: block;
+      filter: drop-shadow(0 0 5px rgba(202,228,225,0.4)) drop-shadow(-5px 0 5px rgba($darkScnd, 0.5)) drop-shadow(5px 0 5px rgba($darkThrd, 0.5));
+      position: absolute;
+      top: 0;
+      left: 0;
       border-radius: inherit;
       background: white;
       width: inherit;
@@ -89,19 +91,19 @@
       flex-basis: 1.5em;
     }
 
-    .content_title {
+    .content-title {
       display: flex;
       flex-direction: column;
       font-size: 1.8em;
       font-weight: 600;
     }
 
-    .content_subtitle {
+    .content-subtitle {
       display: flex;
       flex-direction: column;
     }
 
-    .content_icons {
+    .content-icons {
       margin: 1em;
       font-size: 1.75em;
       a[icon] {
