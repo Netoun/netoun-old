@@ -39,7 +39,7 @@ body {
 
   img {
     &:hover {
-      filter: drop-shadow(0 0 5px rgba(202,228,225,0.5)) drop-shadow(-5px 0 5px rgba($darkScnd, 0.5)) drop-shadow(5px 0 5px rgba($darkThrd, 0.5));
+      filter: drop-shadow(0 0 5px rgba(202,228,225,0.4)) drop-shadow(-4px 0 5px rgba($darkScnd, 0.4)) drop-shadow(4px 0 5px rgba($darkThrd, 0.4));
     }
   }
 
@@ -49,11 +49,7 @@ body {
     margin: auto;
     font-size: 1.2em;
     img {
-      &:hover {
-        filter: drop-shadow(0 0 4px rgba(202,228,225,0.5)) drop-shadow(-4px 0 3px rgba($darkScnd, 0.5)) drop-shadow(4px 0 3px rgba($darkThrd, 0.5));
-      }
-      width: 150px;
-      height: 80px;
+      width: 120px;
       transition: .2s;
     }
   }
@@ -91,10 +87,16 @@ body {
   }
 
   .nav_item {
+    &:hover {
+      transform: translateY(-2px);
+    }
+    &:active {
+      transform: translateY(2px);
+    }
     &.active {
       text-shadow: 0 0 6px rgba(202,228,225,0.5);
       img {
-        filter: drop-shadow(0 0 6px rgba(202,228,225,0.5)) drop-shadow(-.2rem 0 6px rgba(255, 8, 8, 0.5)) drop-shadow(.2rem 0 6px rgba(0, 217, 255, 0.5));
+        filter: drop-shadow(0 0 5px rgba(202,228,225,0.4)) drop-shadow(-4px 0 5px rgba($darkScnd, 0.4)) drop-shadow(4px 0 5px rgba($darkThrd, 0.4));
       }
       span {
         position: relative;
