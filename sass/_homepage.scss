@@ -114,7 +114,7 @@
           text-shadow: 0 0 6px rgba(202,228,225,0.25);
           &:hover {
             transform: translateY(-1px);
-            text-shadow: 2px 0 2px rgba($darkThrd, 0.75), -2px 0 2px rgba($darkScnd, 0.75);
+            text-shadow: 3px 0 2px rgba($darkThrd, 0.75), -3px 0 2px rgba($darkScnd, 0.75);
           }
           &:active {
             transform: translateY(1px);

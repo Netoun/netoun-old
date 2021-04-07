@@ -45,7 +45,7 @@
             <a href="{{ current_url | replace(from=lang ~ "/", to="") }}">{{ config.extra.languages_flags[0] }}</a>
           {% endif %}
         </small>
-        <a {% if current_path is containing("/about") %}class="nav-item active"{% else %}class="nav_item"{% endif %}
+        <a {% if current_path is containing("/about") %}class="nav-item active"{% else %}class="nav-item"{% endif %}
             {% if lang == "en" %} href="{{ config.base_url ~ '/about' }}" {% else %} href="{{ config.base_url ~ '/' ~ lang ~ '/about'}}" {% endif %}
         >
             <span> About me </span>
