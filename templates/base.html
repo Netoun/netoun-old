@@ -31,9 +31,9 @@
       <div class="nav-right">
         <small class="languages">
           {% set deflang = true %}
-          {% for lang in config.languages %}
-            {% if current_url is not containing(lang.code) %}
-              <a href="{{ current_url | replace(from=config.base_url, to=config.base_url ~ "/" ~ lang.code) }}">{{ config.extra.languages_flags[loop.index] }}</a>
+          {% for t in section.translations %}
+            {% if lang != t.lang %}
+              <a href="{{ t.permalink }}">{{ config.extra.languages_flags[loop.index] }}</a>
             {% else %}
               <div class="active">{{ config.extra.languages_flags[loop.index] }} </div>
               {% set_global deflang = false %}

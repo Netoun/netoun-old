@@ -123,12 +123,12 @@ body {
           border-radius: 2px;
         }
         &:hover:before {
-          box-shadow: 3px 0 2px rgba($darkThrd, 0.75), -3px 0 2px rgba($darkScnd, 0.75);
+          box-shadow: 4px 0 4px rgba($darkThrd, 0.75), -4px 0 4px rgba($darkScnd, 0.75);
         }
       }
     }
     &:hover {
-      text-shadow: 2px 0 2px rgba($darkThrd, 0.75), -2px 0 2px rgba($darkScnd, 0.75);
+      text-shadow: 4px 0 4px rgba($darkThrd, 0.75), -4px 0 4px rgba($darkScnd, 0.75);
     }
   }
 }

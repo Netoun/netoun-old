@@ -1,9 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
+@mixin gitchText($offset, $text, $delay) {
+  content: $text;
+  position: absolute;
+  left: $offset;
+  top: $offset;
+  clip: rect(0, 900px, 0, 0); 
+  background-color: $darkBgrd;
+  color: $darkPrim;
+  animation: glitch 3s infinite alternate-reverse;
+  animation-delay: $delay + s;
+}
+
 .about {
   h1 {
     font-family: "Bebas Neue", cursive;
-    font-weight: 400;
+    font-weight: 400;  
+    
+    position: relative;
   }
 
   font-weight: 400;
@@ -13,19 +27,20 @@
     width: calc(min(120ch, calc(100%) - 64px));
   }
 
-  .resume-header {
-    padding: 0.25rem 1rem 0.5rem;
-    margin: 0 0 2rem;
-    .resume-content {
-      font-style: italic;
-    }
-    @include lg {
-      padding: 0.5rem 2rem 1rem;
+  @for $i from 1 through 10 {
+    .content-block:nth-child(#{$i}) {
+      h1 {
+        &:after {
+          @include gitchText(2px, attr(data-text), random(4));
+        }
+        &:before {
+          @include gitchText(-2px, attr(data-text), random(4));
+        }  
+      }
     }
   }
+
   .content-block {
-    background-color: $darkCard;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     margin: 2rem 0;
     border-radius: 0.5rem;
     padding: 0.25rem 1rem 0.5rem;
@@ -60,5 +75,14 @@
   li::before {
     content: "• ";
     color: $darkScnd;
+  }
+}
+
+@keyframes glitch {
+  $steps: 20;
+  @for $i from 0 through $steps{
+    #{percentage($i * (1 / $steps))}{
+      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+    }
   }
 }
