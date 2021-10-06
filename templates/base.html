@@ -31,7 +31,7 @@
       <div class="nav-right">
         <small class="languages">
           {% set deflang = true %}
-          {% for t in section.translations %}
+          {% for t in section.translations | sort(attribute="lang") %}
             {% if lang != t.lang %}
               <a href="{{ t.permalink }}">{{ config.extra.languages_flags[loop.index] }}</a>
             {% else %}

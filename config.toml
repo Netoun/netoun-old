@@ -14,7 +14,7 @@ default_language = "en"
 
 [languages.fr]
 code = "fr" 
-flag="ee" # there will be a feed for French content
+flag = "🇫🇷" # there will be a feed for French content
 
 
 
