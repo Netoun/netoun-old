@@ -11,9 +11,11 @@ highlight_code = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 default_language = "en"
-languages = [
-    {code = "fr", flag="ee"}, # there will be a feed for French content
-]
+
+[languages.fr]
+code = "fr" 
+flag="ee" # there will be a feed for French content
+
 
 
 [extra]
@@ -31,6 +33,7 @@ links = [
 ]
 
 languages_flags = [
+    "",
     "🇬🇧",
-    "🇫🇷"
+    "🇫🇷",
 ]
