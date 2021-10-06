@@ -3,6 +3,17 @@ title = "Professional experience"
 date = 2021-02-19
 +++
 
+## **[Lonestone](https://www.lonestone.io/) - Front-end developer**: 2021 - ...
+
+Mission for the SACEM
+
+Technical Stack:
+- Nuxt
+- Storyblok
+- Tailwind
+
+&nbsp;
+
 ## **[Easilys](https://www.easilys.com/) - Full stack developer**: 2019 - ...
 
 In charge to develop new modules for applications. Carry out tests and validate its development.

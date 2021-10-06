@@ -3,7 +3,19 @@ title = "Expériences professionnelles"
 date = 2021-02-19
 +++
 
-## **[Easilys](https://www.easilys.com/) - Développeur full stack**: 2019 - ...
+## **[Lonestone](https://www.lonestone.io/) - Développeur front-end**: 2021 - ...
+
+Mission en régie chez la Sacem 
+
+Stack technique :
+- Nuxt
+- Storyblok
+- Tailwind
+
+&nbsp;
+
+
+## **[Easilys](https://www.easilys.com/) - Développeur full stack**: 2019 - 2021
 
 Responsable des développements de nouveaux modules pour l'application Easilys. Intégrer des tests et valider son développement.
 Gérer la maintenance corrective et évolutive de l'application.

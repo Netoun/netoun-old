@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-@mixin gitchText($offset, $text, $delay) {
+@mixin gitchText($offset, $text, $interval, $delay) {
   content: $text;
   position: absolute;
   left: $offset;
@@ -8,7 +8,11 @@
   clip: rect(0, 900px, 0, 0); 
   background-color: $darkBgrd;
   color: $darkPrim;
-  animation: glitch 3s infinite alternate-reverse;
+  animation-name : glitch;
+  animation-timing-function : ease-in-out; 
+  animation-iteration-count : infinite;
+  animation-play-state : running;
+  animation-duration : 3s;
   animation-delay: $delay + s;
 }
 
@@ -31,10 +35,10 @@
     .content-block:nth-child(#{$i}) {
       h1 {
         &:after {
-          @include gitchText(2px, attr(data-text), random(4));
+          @include gitchText(2px, attr(data-text), random(10) + 5, random(10));
         }
         &:before {
-          @include gitchText(-2px, attr(data-text), random(4));
+          @include gitchText(-2px, attr(data-text), random(5) + 10, random(15));
         }  
       }
     }
