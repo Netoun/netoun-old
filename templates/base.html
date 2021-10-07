@@ -8,15 +8,14 @@
   <meta name="author" content="{{ config.extra.author }}">
   <meta name=description content="Personal website of a web developer using zola static generator website.">
   <meta property="og:title" content="{{ config.extra.author }}">
-  <meta property="og:image" content="{{config.base_url ~ '/hello.png' }}">
+  <meta property="og:image" content="{{config.base_url ~ '/hello.webp' }}">
   <meta property="og:description" content="Personal website of a web developer using zola static generator website.">
-  <script async defer data-domain="netoun.com" src="https://plausible.io/js/plausible.js"></script>
   <link rel="preload"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="icon" type="image/png" href="/favicon.ico" />
   <link rel="preload" href="{{ get_url(path="style.css") }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
-    <link rel="stylesheet" href="{{ get_url(path="style.css") }}">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" rel="preload" href="{{ get_url(path="style.css") }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   </noscript>
 </head>
 
@@ -26,7 +25,7 @@
       <a {% if current_path == "/" or current_path == "fr/" %} class="nav-item active" {% else %} class="nav_item" {% endif %}
           {% if lang == "en" %} href="{{ config.base_url ~ '/' }}" {% else %} href="{{ config.base_url ~ '/' ~ lang}}" {% endif %}
       >
-        <img src="{{ config.base_url ~ '/hello.png' }}" alt="hello" width="125" height="67">
+        <img src="{{ config.base_url ~ '/hello.webp' }}" alt="hello" width="125" height="67">
       </a>
       <div class="nav-right">
         <small class="languages">

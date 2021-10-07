@@ -20,7 +20,7 @@ flag = "🇫🇷" # there will be a feed for French content
 
 [extra]
 author = "Nicolas Coulonnier"
-author_image="me.jpg"
+author_image="me.webp"
 
 job = "Full Stack Developer"
 description = "Rust & Javascript ❤️"
