@@ -31,9 +31,3 @@ links = [
     { title = "linkedin", url = "https://www.linkedin.com/in/nicolas-coulonnier-66416813b/", icon = "fab fa-linkedin"},
     { title = "mail", url = "mailto:coulonnier.nicolas.44@gmail.com", icon = "fas fa-envelope"}
 ]
-
-languages_flags = [
-    "",
-    "🇬🇧",
-    "🇫🇷",
-]
