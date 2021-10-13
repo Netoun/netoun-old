@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Nicolas Coulonnier </title>
+  <meta name="author" content="Nicolas Coulonnier">
+  <meta name=description content="Personal website of a web developer using zola static generator website.">
+  <meta property="og:title" content="Nicolas Coulonnier">
+  <meta property="og:image" content="https://netoun.com/hello.webp">
+  <meta property="og:description" content="Personal website of a web developer using zola static generator website.">
+  <link rel="preload"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="icon" type="image/png" href="/favicon.ico" />
+  <style>@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");*,*::before,*::after{box-sizing:border-box}html,body,.app{margin:0;min-height:100vh}html{font-family:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}body{color:#fff;background-color:#171717;font-family:system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"}.app{display:flex;flex-direction:column;flex-wrap:nowrap}.nav{z-index:1;width:100%;box-sizing:border-box;display:flex;flex-direction:row;justify-content:space-between;align-items:center;padding:0.5em 1em;flex:0 0 5em}.nav img:hover{filter:drop-shadow(0 0 5px rgba(202,228,225,0.2)) drop-shadow(-2px 0 5px rgba(255,0,68,0.25)) drop-shadow(2px 0 5px rgba(69,14,255,0.25))}@media (min-width: 992px){.nav{width:75%;margin:auto;font-size:1.2em}.nav img{width:120px;transition:.2s}}.nav .nav-right{display:flex;justify-content:space-between;align-items:center;flex-direction:row}.nav .nav-right .languages{margin-right:2rem;display:flex;flex-direction:row;justify-content:space-between;align-items:center}@media (min-width: 992px){.nav .nav-right .languages{margin-left:2rem}}.nav .nav-right .languages>*{margin-left:.5rem}@media (min-width: 992px){.nav .nav-right .languages>*{margin-left:.5rem}}.nav .nav-right .languages>*.active{opacity:.8;text-shadow:2px 2px 1px #240961,-2px -2px 1px #240961;pointer-events:none}.nav .nav-item:hover{transform:translateY(-2px)}.nav .nav-item.active{text-shadow:0 0 6px rgba(202,228,225,0.5)}.nav .nav-item.active img{filter:drop-shadow(0 0 5px rgba(202,228,225,0.2)) drop-shadow(-2px 0 5px rgba(255,0,68,0.4)) drop-shadow(2px 0 5px rgba(69,14,255,0.4))}.nav .nav-item.active span{position:relative;display:inline-block}.nav .nav-item.active span:before{transition:.2s;box-shadow:0 0 6px #cae4e1;position:absolute;height:2px;width:50%;left:25%;transform:translate(0, -50%);bottom:-5px;background:white;display:block;content:"";border-radius:2px}.nav .nav-item.active span:hover:before{box-shadow:4px 0 4px rgba(69,14,255,0.75),-4px 0 4px rgba(255,0,68,0.75)}.nav .nav-item:hover{text-shadow:4px 0 4px rgba(69,14,255,0.75),-4px 0 4px rgba(255,0,68,0.75)}.container{height:auto;display:flex;flex:1 1 auto;flex-wrap:nowrap;justify-content:center;align-items:center}.footer{display:flex;flex:0 0 4em;align-items:center;justify-content:center;font-weight:600}.footer .copyright{color:#f04}@media (min-width: 992px){.footer{margin:auto;font-size:1.2em}}.font-medium{font-weight:500}.font-thin{font-weight:300}a{color:#fff;text-decoration:none;font-weight:600;transition:.2s}@keyframes skew{0%{transform:skew(0deg) rotate3D(0, 0, 1, 0deg)}25%{transform:skew(6deg) rotate3D(0, 0.1, 1, 90deg)}50%{transform:skew(3deg) rotate3D(0, 0, 1, 190deg)}75%{transform:skew(5deg) rotate3D(0, 0.2, 1, 270deg)}100%{transform:skew(1deg) rotate3D(0, 0, 1, 360deg)}}@keyframes fluid-border{0%{border-radius:165px 200px 180px 160px}25%{border-radius:200px 150px 190px 200px}50%{border-radius:190px 200px 100px 186px}75%{border-radius:200px 175px 151px 180px}100%{border-radius:165px 200px 180px 160px}}.homepage{text-align:center}.homepage .img-profile-wrapper{margin:auto;border-radius:50%;position:relative;width:270px;height:270px}.homepage .img-profile-wrapper .circle{filter:drop-shadow(0 0 5px rgba(202,228,225,0.4)) drop-shadow(-5px 0 5px rgba(255,0,68,0.5)) drop-shadow(5px 0 5px rgba(69,14,255,0.5));position:absolute;top:0;left:0;border-radius:inherit;background:white;width:inherit;height:inherit;animation:fluid-border 4s ease-in-out infinite, skew 6s linear infinite}.homepage .img-profile-wrapper img{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);border-radius:inherit}@media (min-width: 992px){.homepage .img-profile-wrapper{padding:.5em 2em;font-size:2em}.homepage .img-profile-wrapper .circle{width:inherit;height:inherit}.homepage .img-profile-wrapper img{width:250px;height:250px}}.homepage .content{display:flex;flex-direction:column;justify-content:space-between;line-height:1.5em;margin-top:2em}.homepage .content>*{flex-basis:1.5em}.homepage .content .content-title{display:flex;flex-direction:column;font-size:1.8em;font-weight:600}.homepage .content .content-subtitle{display:flex;flex-direction:column}.homepage .content .content-icons{margin:1em;font-size:1.75em}.homepage .content .content-icons a{position:relative;margin:0 .2em}.homepage .content .content-icons a>i{transition:.5s;text-shadow:0 0 6px rgba(202,228,225,0.25)}.homepage .content .content-icons a>i:hover{transform:translateY(-1px);text-shadow:3px 0 2px rgba(69,14,255,0.75),-3px 0 2px rgba(255,0,68,0.75)}.homepage .content .content-icons a>i:active{transform:translateY(1px)}@media (min-width: 992px){.homepage .content{font-size:1em}}.about{font-weight:400;padding:1em}.about h1{font-family:"Bebas Neue", cursive;font-weight:400;position:relative}@media (min-width: 992px){.about{width:calc(min(120ch, calc(100%) - 64px))}}.about .content-block:nth-child(1) h1:after{content:attr(data-text);position:absolute;left:2px;top:2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:9s}.about .content-block:nth-child(1) h1:before{content:attr(data-text);position:absolute;left:-2px;top:-2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:12s}.about .content-block:nth-child(2) h1:after{content:attr(data-text);position:absolute;left:2px;top:2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:3s}.about .content-block:nth-child(2) h1:before{content:attr(data-text);position:absolute;left:-2px;top:-2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:10s}.about .content-block:nth-child(3) h1:after{content:attr(data-text);position:absolute;left:2px;top:2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:1s}.about .content-block:nth-child(3) h1:before{content:attr(data-text);position:absolute;left:-2px;top:-2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:10s}.about .content-block:nth-child(4) h1:after{content:attr(data-text);position:absolute;left:2px;top:2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:8s}.about .content-block:nth-child(4) h1:before{content:attr(data-text);position:absolute;left:-2px;top:-2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:1s}.about .content-block:nth-child(5) h1:after{content:attr(data-text);position:absolute;left:2px;top:2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:6s}.about .content-block:nth-child(5) h1:before{content:attr(data-text);position:absolute;left:-2px;top:-2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:14s}.about .content-block:nth-child(6) h1:after{content:attr(data-text);position:absolute;left:2px;top:2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:8s}.about .content-block:nth-child(6) h1:before{content:attr(data-text);position:absolute;left:-2px;top:-2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:11s}.about .content-block:nth-child(7) h1:after{content:attr(data-text);position:absolute;left:2px;top:2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:4s}.about .content-block:nth-child(7) h1:before{content:attr(data-text);position:absolute;left:-2px;top:-2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:10s}.about .content-block:nth-child(8) h1:after{content:attr(data-text);position:absolute;left:2px;top:2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:10s}.about .content-block:nth-child(8) h1:before{content:attr(data-text);position:absolute;left:-2px;top:-2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:14s}.about .content-block:nth-child(9) h1:after{content:attr(data-text);position:absolute;left:2px;top:2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:2s}.about .content-block:nth-child(9) h1:before{content:attr(data-text);position:absolute;left:-2px;top:-2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:12s}.about .content-block:nth-child(10) h1:after{content:attr(data-text);position:absolute;left:2px;top:2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:7s}.about .content-block:nth-child(10) h1:before{content:attr(data-text);position:absolute;left:-2px;top:-2px;clip:rect(0, 900px, 0, 0);background-color:#171717;color:#fff;animation-name:glitch;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:running;animation-duration:3s;animation-delay:10s}.about .content-block{margin:2rem 0;border-radius:0.5rem;padding:0.25rem 1rem 0.5rem}.about .content-block h2{font-weight:500;color:#f04}.about .content-block h2 a{color:#f04}.about .content-block h2 a:hover{color:#450eff}.about .content-block p{margin:0.5em 0}@media (min-width: 992px){.about{padding:2em;font-size:1em}}.about ul{list-style:none}.about li::before{content:"• ";color:#f04}@keyframes glitch{0%{clip:rect(14px, 9999px, 19px, 0)}5%{clip:rect(25px, 9999px, 1px, 0)}10%{clip:rect(18px, 9999px, 100px, 0)}15%{clip:rect(55px, 9999px, 83px, 0)}20%{clip:rect(73px, 9999px, 85px, 0)}25%{clip:rect(6px, 9999px, 15px, 0)}30%{clip:rect(87px, 9999px, 100px, 0)}35%{clip:rect(99px, 9999px, 64px, 0)}40%{clip:rect(1px, 9999px, 10px, 0)}45%{clip:rect(84px, 9999px, 93px, 0)}50%{clip:rect(46px, 9999px, 87px, 0)}55%{clip:rect(87px, 9999px, 34px, 0)}60%{clip:rect(63px, 9999px, 82px, 0)}65%{clip:rect(89px, 9999px, 7px, 0)}70%{clip:rect(36px, 9999px, 31px, 0)}75%{clip:rect(38px, 9999px, 58px, 0)}80%{clip:rect(56px, 9999px, 95px, 0)}85%{clip:rect(78px, 9999px, 100px, 0)}90%{clip:rect(30px, 9999px, 33px, 0)}95%{clip:rect(87px, 9999px, 39px, 0)}100%{clip:rect(7px, 9999px, 7px, 0)}}.error_content{min-height:100vh;display:flex;justify-content:center;align-items:center;flex-direction:column}.error_content h1{position:relative}.error_content h1 .char1{transform:rotate(-18.55556deg)}.error_content h1 .char2{transform:rotate(-14.11111deg)}.error_content h1 .char3{transform:rotate(-9.66667deg)}.error_content h1 .char4{transform:rotate(-5.22222deg)}.error_content h1 .char5{transform:rotate(-.77778deg)}.error_content h1 .char6{transform:rotate(3.66667deg)}.error_content h1 .char7{transform:rotate(8.11111deg)}.error_content h1 .char8{transform:rotate(12.55556deg)}.error_content h1 .char9{transform:rotate(17deg)}.error_content h1 span{font:26px Monaco, MonoSpace;height:200px;position:absolute;width:20px;left:0;top:0;transform-origin:bottom center}.error_content img{margin:2rem;width:10rem}@media (min-width: 992px){.error_content img{margin:3rem;width:20rem}}
+</style>
+</head>
+
+<body>
+  <div class="app">
+    <nav class="nav">
+      <a  class="nav_item" 
+           href="https://netoun.com/" 
+      >
+        <img src="https://netoun.com/hello.webp" alt="hello" width="125" height="67">
+      </a>
+      <div class="nav-right">
+        <small class="languages">
+          
+          
+            <a  class="active"  href="https:&#x2F;&#x2F;netoun.com&#x2F;about&#x2F;">en</a>
+          
+            <a  href="https:&#x2F;&#x2F;netoun.com&#x2F;fr&#x2F;about&#x2F;">fr</a>
+          
+        </small>
+        <a class="nav-item active"
+             href="https://netoun.com/about" 
+        >
+            <span> About me </span>
+        </a>
+      </div>
+    </nav>
+    <main class="container">
+      
+  <div class="about">
+    <div class="content">
+        <div class="content-block">
+            <h1 class="content-block-title" data-text="Resume">Resume</h1>
+            <p>I am 25 years old and live in Nantes. I am passionate about computing in the broad sense: dev, web technos, hardware, Linux, IoT, ... <br />
+I'm also passionate about all things creative such as drawing, music and design.</p>
+
+        </div>
+        
+        <div class="content-block">
+            <h1 class="content-block-title" data-text="Professional experience">Professional experience</h1>
+            <h2 id="lonestone-front-end-developer-2021"><strong><a href="https://www.lonestone.io/">Lonestone</a> - Front-end developer</strong>: 2021 - ...</h2>
+<p>Mission for the SACEM</p>
+<p>Technical Stack:</p>
+<ul>
+<li>Nuxt</li>
+<li>Storyblok</li>
+<li>Tailwind</li>
+</ul>
+<p> </p>
+<h2 id="easilys-full-stack-developer-2019"><strong><a href="https://www.easilys.com/">Easilys</a> - Full stack developer</strong>: 2019 - ...</h2>
+<p>In charge to develop new modules for applications. Carry out tests and validate its development.
+Manage the corrective and evolutionary maintenance of the application.</p>
+<p>Technical Stack:</p>
+<ul>
+<li>Database : Postgres</li>
+<li>Back : Node</li>
+<li>Front : Vue</li>
+</ul>
+<p> </p>
+<h2 id="sogeti-work-study-program-2018-2019"><strong><a href="https://www.fr.sogeti.com/">Sogeti</a> - Work-Study Program</strong>: 2018 - 2019</h2>
+<p>Development of new solutions within the innovation pole :</p>
+<ul>
+<li>Development of a tool to take control of GitFlow in ReactJS</li>
+<li>Development of a chatbot using machine learning tools for the
+understanding of emotions</li>
+</ul>
+<p>Technical Stack:</p>
+<ul>
+<li>CI : Drone</li>
+<li>Back : Python, Rust, DialogFlow, TensorFlow</li>
+<li>Front : React</li>
+</ul>
+
+        </div>
+        
+        <div class="content-block">
+            <h1 class="content-block-title" data-text="Schools course">Schools course</h1>
+            <h2 id="epsi-master-of-science-in-computer-engineering-2016-2019"><strong><a href="http://www.epsi.fr/">EPSI</a> - Master of Science in Computer Engineering</strong>: 2016 - 2019</h2>
+<p>Training leading to a level I RNCP qualification (Bac+5) &quot;Expert in Computer Science and Information Systems&quot;, and carried out in an apprenticeship in the <a href="https://www.atos.net/">Atos</a> company and <a href="https://www.fr.sogeti.com/">Sogeti</a>.</p>
+<p> </p>
+<h2 id="saint-felix-la-salle-computer-science-associate-s-degree-snir-2014-2016"><strong><a href="https://stfelixlasalle.fr/formation/bts-systemes-numeriques">Saint Félix la salle</a> - Computer Science Associate’s Degree (SNIR)</strong>: 2014 - 2016</h2>
+<p>Training in the basics of computing, networks and their security, embedded systems, cloud computing and systems programming.</p>
+<ul>
+<li>Design, project management, web, c++</li>
+<li>Database, network, systeme</li>
+</ul>
+
+        </div>
+        
+        <div class="content-block">
+            <h1 class="content-block-title" data-text="Skills and competencies">Skills and competencies</h1>
+            <ul>
+<li><strong>Languages</strong> : Javascript, Rust, Python, ...</li>
+<li><strong>CI</strong> : Gitlab CI, GitHub Actions, Drone CI, ...</li>
+<li><strong>System</strong> : NGINX, Docker, Linux, ...</li>
+<li><strong>Methodology</strong> : SCRUM</li>
+</ul>
+<p><strong>Others</strong> :</p>
+<ul>
+<li>Music 🎵 (Guitar, drum and music workstation)</li>
+<li>Video Games 🎮</li>
+</ul>
+
+        </div>
+        
+    </div>
+  </div>
+
+    </main>
+    <footer class="footer">
+      <span class="copyright">©</span>&nbsp;2021 - Nantes
+    </footer>
+  </div>
+</body>
+</html>
